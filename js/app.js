@@ -85,6 +85,9 @@ function borrar(){
     document.getElementById("edad").value = "";
     document.getElementById("altura").value = "";
     document.getElementById("peso").value = "";
+    document.getElementById("imcPromedio").innerText = "";
+    promedio = 0;
+    numRegistros = 0;
 }
 
 
