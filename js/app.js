@@ -6,7 +6,7 @@ function generar(){
     let altura= document.getElementById('altura');
     let peso= document.getElementById('peso');
 
-    let aleatorioEdad = Math.floor(Math.random()*(99)+1); 
+    let aleatorioEdad = (Math.floor(Math.random()*(99 - 18) + 18));
 
     edad.value = aleatorioEdad;
     
