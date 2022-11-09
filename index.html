@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExamenCorte2 - Recuperacion</title>
     <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-    <header>
+    <header id="encabezado">
         <h1>Calcular IMC</h1>
     </header>
 
     <div id="contenido">
-        <label>Edad:</label>
-        <input type="text" id="edad">
-        <label>Altura:</label>
-        <input type="text" id="altura">
-        <label>Peso:</label>
-        <input type="text" id="peso">
-        <button id="btnGenerar" onclick="generar()">Generar</button>
-        <button id="btnCalcular" onclick="calcular()">Calcular</button>
+        <div id="contenedor">
+            <label>Edad:</label>
+            <input type="text" id="edad">
+            <label>Altura:</label>
+            <input type="text" id="altura">
+            <label>Peso:</label>
+            <input type="text" id="peso">
+            <button id="btnGenerar" onclick="generar()">Generar</button>
+            <button id="btnCalcular" onclick="calcular()">Calcular</button>
+            <button id="btnRegistrar" onclick="registrar()">Registrar</button>
+        </div>
         <br>
         <br>
-        <label>IMC:</label>
-        <input type="text" id="imc">
+        <div id="contenedor-imc">
+            <div class="campo">
+                <label>IMC:</label>
+                <input type="text" id="imc">
+            </div>
+            <br>
+            <div class="campo">
+                <label>Nivel:</label>
+            <input type="text" id="nivel">
+            </div>
+        </div>
         <br>
-        <label>Nivel:</label>
-        <input type="text" id="nivel">
-        <br>
-        <button id="btnRegistrar">Registrar</button>
-        <br>
-        <div id="registros">
-            
+        <div id="contenedor-registros">
+            <h2>Registros</h2>
+            <div id="registros">
+                
+            </div>
+            <button id="btnBorrar" onclick="borrar()">Borrar Registros</button>
         </div>
     </div>
 
