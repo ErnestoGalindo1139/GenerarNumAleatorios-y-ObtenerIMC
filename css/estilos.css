@@ -38,6 +38,10 @@ h1 {
     margin-top: 2em;
 }
 
+#contenedor-registros table {
+    margin-bottom: 1em;
+}
+
 #contenedor-registros h2 {
     text-align: center;
     margin-bottom: 1em;
@@ -109,6 +113,11 @@ h1 {
     background-color: yellow;
     color: black;
     cursor: pointer;
+}
+
+#contenedor-promedio {
+    text-align: center;
+    margin-top: 1em;
 }
 
 

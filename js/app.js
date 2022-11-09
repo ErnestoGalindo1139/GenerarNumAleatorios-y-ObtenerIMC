@@ -1,3 +1,6 @@
+var promedio = 0;
+var numRegistros = 0;
+
 function generar(){
     let edad = document.getElementById('edad');
     let altura= document.getElementById('altura');
@@ -54,7 +57,22 @@ function registrar(){
     }else if(imc == ""){
         alert('Presione el boton de Calcular');
     }else{
-        registros.innerHTML += "<p>" + " Edad: " +  edad + " " + " Altura: " + altura + " " + " Peso: "+ peso + " " + " IMC: "+ imc + " " + " Nivel: " + nivel + "</p>"
+
+        var convertido = parseFloat(document.getElementById("imc").value);
+
+        numRegistros += 1;
+        promedio += convertido;
+
+        document.getElementById("imcPromedio").innerHTML = (promedio / numRegistros).toFixed(2);
+
+        registros.innerHTML += `<tr>
+		<td>${numRegistros}</td>
+		<td>${document.getElementById("edad").value}</td>
+		<td>${document.getElementById("altura").value}</td>
+		<td>${document.getElementById("peso").value}</td>
+		<td>${document.getElementById("imc").value}</td>
+		<td>${document.getElementById("nivel").value}</td>
+	</tr>`;
     }
 
 
